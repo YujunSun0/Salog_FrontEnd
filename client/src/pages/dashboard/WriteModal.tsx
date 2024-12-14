@@ -577,11 +577,11 @@ const Container = styled.div<{ $isOpen: boolean }>`
   padding: ${(props) => (props.$isOpen ? "2rem" : "")};
   /* z-index: 75; */
 
-   p {
-        font-size: 1.2rem;
-        font-weight: 600;
-        color: #6d6d75;
-    }
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6d6d75;
+  }
 
   .deleteIcon {
     float: right;
@@ -616,12 +616,12 @@ const Container = styled.div<{ $isOpen: boolean }>`
     font-weight: 600;
   }
 
-  .money__write  {
+  .money__write {
     margin-top: 1rem;
     height: 3.7rem;
     display: flex;
     flex-direction: column;
-    position: relative:
+    position: relative;
   }
 
   .money__write__input {
@@ -633,28 +633,29 @@ const Container = styled.div<{ $isOpen: boolean }>`
     color: transparent;
     background-color: transparent;
     cursor: pointer;
-    }
+  }
 
   .writeIcon {
     font-size: 2rem;
     display: none;
   }
-  
 
-    h5:after {
-    content: '';
-    display:block;
+  h5:after {
+    content: "";
+    display: block;
     margin-top: 0.2rem;
-    border-bottom: 1px solid #78a1df;  
-    transform: scaleX(0);  
+    border-bottom: 1px solid #78a1df;
+    transform: scaleX(0);
     transition: transform 250ms ease-in-out;
-    }
+  }
 
-    h5.hovered:after { 
-        transform: scaleX(1);
-     }
+  h5.hovered:after {
+    transform: scaleX(1);
+  }
 
-    h5.fromLeft:after{  transform-origin:  0% 50%; }
+  h5.fromLeft:after {
+    transform-origin: 0% 50%;
+  }
 
   /* input:focus {
     padding-bottom: 0.3rem;
@@ -668,7 +669,7 @@ const Container = styled.div<{ $isOpen: boolean }>`
   }
 
   .division {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
@@ -676,23 +677,23 @@ const Container = styled.div<{ $isOpen: boolean }>`
   }
 
   .division__btn {
-    display:flex;
+    display: flex;
     gap: 4px;
   }
 
   .form_radio_btn {
     input {
-        display:none;
+      display: none;
     }
 
     label {
-        cursor: pointer;
-        font-size: 1.2rem;
-        font-weight: 500;
-        border-radius: 6px;
-        padding: 0.5rem 1.2rem;
-        border : 0.2rem solid #C9C9C9;
-        color: rgb(144, 144, 160);
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: 500;
+      border-radius: 6px;
+      padding: 0.5rem 1.2rem;
+      border: 0.2rem solid #c9c9c9;
+      color: rgb(144, 144, 160);
     }
   }
 
@@ -704,48 +705,48 @@ const Container = styled.div<{ $isOpen: boolean }>`
   .category {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     margin-top: 1.5rem;
 
     select {
-        cursor: pointer;
-        font-size: 1.2rem;
-        position: relative;
-        border: none;
-        border-bottom: 1px solid #C9C9C9;
-        width: 11rem;
-        padding-bottom: 0.3rem;
-        padding-left: 0.3rem;
-        color: #616165;
-        font-weight: 500;
-        outline:none;
-        -webkit-appearance:none; /* 크롬 화살표 없애기 */
-        -moz-appearance:none; /* 파이어폭스 화살표 없애기 */
-        appearance:none /* 화살표 없애기 */
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: relative;
+      border: none;
+      border-bottom: 1px solid #c9c9c9;
+      width: 11rem;
+      padding-bottom: 0.3rem;
+      padding-left: 0.3rem;
+      color: #616165;
+      font-weight: 500;
+      outline: none;
+      -webkit-appearance: none; /* 크롬 화살표 없애기 */
+      -moz-appearance: none; /* 파이어폭스 화살표 없애기 */
+      appearance: none; /* 화살표 없애기 */
     }
 
     svg {
-        position:absolute;
-        right:1.5rem;
-        margin-bottom: 1rem;
+      position: absolute;
+      right: 1.5rem;
+      margin-bottom: 1rem;
     }
   }
 
   .account {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     margin-top: 1.5rem;
 
-     .account__input {
-        border:none;
-        border-bottom: 0.5px solid #C9C9C9;
-        width: 11rem;
-        padding-bottom: 0.3rem;
-        padding-left: 0.3rem;
-        font-weight: 500;
-        font-size:1.2rem;
-        color: #616165;
+    .account__input {
+      border: none;
+      border-bottom: 0.5px solid #c9c9c9;
+      width: 11rem;
+      padding-bottom: 0.3rem;
+      padding-left: 0.3rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: #616165;
     }
   }
 
@@ -754,74 +755,74 @@ const Container = styled.div<{ $isOpen: boolean }>`
   }
 
   .file__input {
-      opacity: 0;
-      z-index: 1;
-      position: relative;
-      width: 100%;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  .file__input__displace {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    pointer-events: none;
+    position: absolute;
+    top: 1rem;
+    z-index: 2;
+    border: 0.5px solid #c9c9c9;
+    border-radius: 4px;
+
+    .file__input__btn {
+      margin: 0;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      background: #839dfa;
+      width: 7rem;
+      height: 3rem;
     }
 
-    .file__input__displace {
-      display: flex;
-      gap: 0.2rem;
-      align-items: center;
-      pointer-events: none;
-      position: absolute;
-      top: 1rem;
+    > span {
       z-index: 2;
-      border: 0.5px solid #C9C9C9;
-      border-radius: 4px;
-
-      .file__input__btn {
-        margin: 0;
-        padding: 0.5rem 1rem;
-        font-size: 1.2rem;
-        background: #839dfa;
-        width: 7rem;
-        height: 3rem;
-      }
-
-      > span {
-        z-index: 2;
-        display:flex;
-        align-items: center;
-        font-size: 1.1rem;
-        min-width: 13rem;
-        height: 2.8rem;
-        padding: 0 0.5rem;
-        background: white;
-      }
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      min-width: 13rem;
+      height: 2.8rem;
+      padding: 0 0.5rem;
+      background: white;
     }
+  }
 
   .receipt {
-    display:flex; 
+    display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
 
     input {
-        border: 1px solid #C9C9C9;
-        border-radius: 4px;
-        margin-top: 1rem;
-        font-size: 1.2rem;
+      border: 1px solid #c9c9c9;
+      border-radius: 4px;
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
 
-    input[type=file]::file-selector-button {
-        cursor: pointer;
-        width: 60px;
-        height: 27px;
-        font-size: 1.1rem;
-        border: none;
-        border-right: 1px solid #C9C9C9;
-        border-radius:4px;
+    input[type="file"]::file-selector-button {
+      cursor: pointer;
+      width: 60px;
+      height: 27px;
+      font-size: 1.1rem;
+      border: none;
+      border-right: 1px solid #c9c9c9;
+      border-radius: 4px;
     }
   }
 
   .explanation {
     display: flex;
     margin-top: 0.8rem;
-    
-    p{
-        font-size: 1rem;
-        white-space: nowrap;
+
+    p {
+      font-size: 1rem;
+      white-space: nowrap;
     }
   }
 
@@ -839,7 +840,6 @@ const Container = styled.div<{ $isOpen: boolean }>`
       pointer-events: none;
     }
   }
-
 `;
 
 const Background = styled.div`
