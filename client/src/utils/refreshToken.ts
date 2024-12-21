@@ -129,7 +129,7 @@ const resetTokenAndReattemptRequest = async (error: any) => {
         subscribers.forEach(callback => callback(null)); // 모든 구독자에게 null 전달
         subscribers = []; // 구독자 초기화
         signOut(); // 로그아웃 처리
-        return Promise.reject(refreshError);
+        return Promise.reject(refreshError); 
       } finally {
         isAlreadyFetchingAccessToken = false;
       }
