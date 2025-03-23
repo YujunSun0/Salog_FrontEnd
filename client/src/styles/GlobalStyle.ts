@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
         color: var(--color-black);
         margin: 0px;
         padding: 0px;
-        font-family: 'Pretendard-Regular';
+        font-family: 'Pretendard-Medium';
     }
 
      @media (min-width:1920px) and (max-width: 2559px) {
@@ -105,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     button {
-        font-family: 'Pretendard-Regular';
+        font-family: 'Pretendard-Medium';
         border: none;
         background: transparent;
         padding: 0;

@@ -1,7 +1,7 @@
 import {
 	combineReducers,
 	configureStore,
-	getDefaultMiddleware,
+	// getDefaultMiddleware,
 } from "@reduxjs/toolkit";
 import ledgerSlice from "./slices/pieChartSlice";
 import userSlice from "./slices/userSlice";
@@ -25,15 +25,15 @@ const persistConfig = {
 	whiteList: ["schedule"],
 };
 
-const persistedReducer = persistReducer(persistConfig, reducers);
+export const persistedReducer = persistReducer(persistConfig, reducers);
 
 const store = configureStore({
 	reducer: {
 		persistedReducer,
-	},
-	middleware: getDefaultMiddleware({
-		serializableCheck: false,
-	}),
+	}
+	// middleware: getDefaultMiddleware({
+	// 	serializableCheck: false,
+	// }),
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

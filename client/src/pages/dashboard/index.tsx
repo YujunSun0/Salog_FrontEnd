@@ -44,7 +44,7 @@ export interface modalType {
 }
 
 const Dashboard = () => {
-  // const member = useSelector((state: RootState) => state.persistedReducer.user);
+  // const member = useSelector((state: RootState) => state.user);
 
   // member에 태그가 추가되면 화면 제작
   const [monthlyOutgo, setMonthlyOutgo] = useState<outgoType>({
